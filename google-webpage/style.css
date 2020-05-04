@@ -1,0 +1,98 @@
+body { 
+    margin: 0px 0px 0px 0px; 
+    padding: 0px 0px 0px 0px; 
+  }
+nav {
+    text-align: right;
+}
+
+.nav-item {
+    margin-right: 20px;
+}
+
+.nav-a {
+    color: black;
+    font-size: 15px;
+    text-decoration: none;
+}
+.nav-a:hover {
+    color: lightgray;
+}
+
+section {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.section-button {
+    padding: 10px;
+    width: 150px;
+    margin-top: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: #e8e8e8;
+    border-radius: 3px;
+    font-size: 15px;
+}
+
+.section-button:hover {
+    background-color: #f4f4f4;
+}
+.search-box {
+    width: 500px;
+    height: 45px;
+    padding-left: 40px;
+    border-radius: 30px;
+    border: 1px solid lightgray;
+}
+.search-box:focus {
+    outline: none;
+    border: 1px solid lightslategray;
+}
+
+footer {
+    color: #5f6368;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.container-left {
+    text-decoration: none;
+    padding: 10px;
+    position: absolute;
+    left: 20;
+}
+
+.container-right {
+    padding: 10px;
+    position: absolute;
+    right: 20;
+    text-decoration: none;
+}
+
+.footer-a {
+    color: #5f6368;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+
+.item-container {
+    height: 40px;
+    background-color: #f2f2f2;
+    border-bottom: 1px solid #e8e8e8e8;
+}
+
+.icon { 
+    padding: 15px; 
+    min-width: 20px; 
+} 
+
+.input-icons i { 
+    position: absolute;    
+} 
+
+#input-icons { 
+    width: 100%; 
+} 
