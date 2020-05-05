@@ -181,10 +181,6 @@ footer h5 {
     padding: 0;
 }
 
-footer ul li h5:hover {
-    color: green;
-}
-
 .div-row {
     display: flex;
     flex-direction: row;
@@ -198,4 +194,12 @@ footer ul li h5:hover {
 .img-flag {
     height: 20px;
     padding: 0;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+a:hover {
+    color: green;
 }
