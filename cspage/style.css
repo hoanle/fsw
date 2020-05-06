@@ -117,21 +117,8 @@
     padding-bottom: 10px;
 }
 
-.nopadding-right {
-    padding-right: 0 !important;
-    margin: 0 !important;
- }
-
-
-.nopadding-left {
-    padding-left: 0 !important;
-    margin: 0 !important;
- }
-
-
-.nopadding {
-    padding: 0 !important;
-    margin: 0 !important;
+ form {
+     display: flex;
  }
 
  span {
