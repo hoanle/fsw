@@ -1,0 +1,146 @@
+.paddding-right {
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.jumbotron-bg-white {
+    background-color: white;
+}
+
+.jumbotron-center {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.text-fixed-height {
+    height: 70px;
+}
+
+.card-button {
+    background-color: #cd4541;
+    align-self: flex-end;
+    outline: none;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.container-window {
+    width: 85%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.third {
+    background-image: url("https://cs-pricing-page.netlify.app/img/banner.jpg");
+    height: 600px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.first {
+    background-color: white;
+    height: 600px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+.first h6 {
+    font-weight: 400;
+    text-align: center;
+}
+
+.first #typewriter{
+    color: #cd4541;
+    margin-top: 20px;
+    font-weight: 700;
+}
+
+.second {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.second h1 {
+    color: #cd4541;
+}
+
+.second h6 {
+    font-size: 17px;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.fourth {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.fourth h1 {
+    color: #cd4541;
+    text-align: center;
+}
+
+.fourth h4 {
+    font-size: 20pt;
+    font-weight: 400;
+    justify-content: center;
+    text-align: center;
+}
+.fourth button {
+    background-color: #cd4541;
+}
+
+.card-title-fixed-height {
+    height: 30px;
+    font-size: 18px;
+}
+
+.horizontal-group {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+
+.nopadding-right {
+    padding-right: 0 !important;
+    margin: 0 !important;
+ }
+
+
+.nopadding-left {
+    padding-left: 0 !important;
+    margin: 0 !important;
+ }
+
+
+.nopadding {
+    padding: 0 !important;
+    margin: 0 !important;
+ }
+
+ span {
+    border-right: .05em solid;
+    animation: caret 1s steps(1) infinite;
+  }
+  
+  @keyframes caret {
+    50% {
+      border-color: transparent;
+    }
+  }
