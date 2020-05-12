@@ -1,0 +1,66 @@
+.windowed {
+    width: 85%;
+    background-color: darkkhaki;
+    padding: 50px;
+    margin: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+.amount-input {
+    height: 50px;
+    border-radius: 10px;
+    border-color: darkslategray;
+    padding-left: 10px;
+    border-width: 1px;
+}
+
+.selector {
+    height: 50px;
+    border-radius: 10px;
+    border-color: darkslategray;
+    padding-left: 10px;
+}
+
+.header-container {
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.switch-container {
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.switch {
+    width: 40px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.btn-convert {
+    width: 100px;
+    border-color: white !important;
+    padding-left: 10px;
+    border-width: 1px;
+    background-color: deepskyblue !important;
+    color: white !important;
+}
+
+.result-text {
+    font-size: 30px;
+    text-align: center;
+    color: darkslategray;
+}
