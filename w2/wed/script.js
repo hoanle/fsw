@@ -2,6 +2,7 @@ let guessMax = 7;
 let guessCount = 0;
 let hiddenNumber = Math.floor(Math.random() * 100);
 let history = "";
+let historyArray = [];
 
 let input = document.getElementById('input-number');
 let guessResult = document.getElementById('guess-result');
@@ -13,11 +14,16 @@ guessRemain.textContent = "Guess remains: " + guessMax;
 
 function onGuess() {
     let value = input.value
+    console.log("include "  + (historyArray.includes(value)));
     if (isNaN(parseInt(value))) {
 
+    } else if (historyArray.includes(value)) {
+        alert("Number has been guessed before");
     } else {
         guessCount += 1
         guessRemain.textContent = "Guess remains: " + (guessMax-guessCount)
+        
+        historyArray.push(value);
 
         if (value > hiddenNumber) {
             guessResult.textContent = "Your guess is greater than the number";
@@ -38,6 +44,7 @@ function onGuess() {
 }
 
 function onReset() {
+    historyArray = [];
     history = "";
     btnGuess.removeAttribute('disabled');
     guessCount = 0;
