@@ -1,0 +1,97 @@
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: skyblue;
+    align-items: center;
+}
+
+.body-container {
+    width: 85%;
+    background-color: royalblue;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.selector {
+    height: 50px;
+    font-size: 20px;
+    width: 80px;
+    background-color: skyblue;
+    color: royalblue;
+    border-color: yellow;
+    font-family: monospace;
+    border-width: 2px;
+    border-radius: 4px !important;
+    padding-left: 10px;
+}
+.input-container {
+    display: flex;
+    align-items: center;
+}
+
+input {
+    height: 50px;
+    width: 500px;
+    font-size: 20px;
+    color: royalblue;
+    border-width: 2px;
+    border-color: yellow;
+    padding-left: 10px;
+    margin-left: 10px;
+    border-radius: 4px !important;
+    border-style: double;
+    font-family: monospace;
+    box-sizing: border-box;
+    background-color: skyblue;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+button {
+    height: 50px;
+    width: 50px;
+    background-color: skyblue;
+    font-size: 35px;
+    color: royalblue;
+    border-color: yellow;
+    font-family: monospace;
+    border-width: 2px;
+    margin-left: 10px;
+    border-radius: 4px !important;
+}
+
+button:hover {
+    background-color: transparent;
+    font-family: monospace;
+    color: yellow;
+}
+
+h5 {
+    color: white;
+    font-family: monospace;
+}
+
+h1 {
+    color: wheat;
+    font-family: monospace;
+    font-size: 60px;
+}
+
+.list-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.radio-status {
+    display: flex;
+    flex-direction: row;
+    color: yellow;
+    align-items: center;
+    margin-left: 10px;
+    justify-content: start;
+}
+
+.raido-input {
+    width: 20px;
+    height: 40px;
+}

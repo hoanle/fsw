@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Week 3 Tuesday</title>
+</head>
+
+<body>
+    <div class="body-container">
+        <h5>Created by Hoan Le</h5>
+        <h1>To do list</h1>
+        <div class="input-container">
+            <select id="selectPriority" class="selector">
+                <option disabled>Select a property</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+            <input type="text" placeholder="Add task" id="input"></input>
+            <button onclick="addItem()">+</button>
+        </div>
+        <div class="list-container">
+            <div class="radio-status">
+                <input type="radio" id="all" name="status" value="ALL" class="raido-input" checked onchange="onFilterSelected(this);"></input>ALL
+            </div>
+            <div class="radio-status">
+                <input type="radio" id="undone" name="status" value="UNDONE" class="raido-input" onchange="onFilterSelected(this);"></input>UNDONE
+            </div>
+            <div class="radio-status">
+                <input type="radio" id="done" name="status" value="DONE" class="raido-input" onchange="onFilterSelected(this);"></input>DONE
+            </div>
+
+
+        </div>
+
+        <ul id="list" style="list-style-type:none;">
+        </ul>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
