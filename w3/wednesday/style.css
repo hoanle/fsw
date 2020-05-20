@@ -1,0 +1,73 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav {
+    width: 75%;
+}
+
+section {
+    width: 100%;
+    border-top: lightgray solid 1px;
+    border-bottom: lightgray solid 1px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.main-container {
+    width: 95%;
+    background-color: red;
+}
+
+.container-left {
+    background-color: white;
+    padding-top: 10px;
+}
+
+.container-right {
+    background-color: white;
+}
+
+.news-container {
+    padding: 10px;
+    border-radius: 10px;
+    border-right: lightgray solid 1px;
+    border-top: lightgray solid 1px;
+    border-bottom: lightgray solid 1px;
+    border-left: lightgray solid 1px;
+    border-width: 1px;
+    margin: 10px;
+}
+
+.img-container {
+    display: flex;
+}
+
+img {
+    object-fit: cover;
+    border-radius: 10px;
+}
+.news-title {
+    color: dodgerblue;
+}
+
+.news-source {
+    color: lightseagreen;
+}
+
+.news-time {
+    padding-top: 10px;
+    font-size: 10px;
+}
+
+.dropright-tran {
+    background-color: transparent !important;
+}
+
+.btn-toogle-tran {
+    background-color: lightseagreen;
+    margin-top: 10px;
+    border-radius: 5px;
+}
