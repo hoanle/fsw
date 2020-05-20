@@ -22,7 +22,7 @@
         <div class="container main-container">
             <div class="row">
                 <div class="col-2 container-left">
-                    <h6>Show 20 of 20 article</h>
+                        Show <span id="count-container">10 of 20</span> article
 
                         <div class="btn-group dropright">
                             <button type="button" class="btn btn-secondary dropdown-toggle btn-toogle-tran"
@@ -30,13 +30,13 @@
                                 Category
                             </button>
                             <div class="dropdown-menu" id="category-dropdown">
-                                <div class="dropdown-item" onclick="performSearch('business')">Business</div>
-                                <div class="dropdown-item" onclick="performSearch('entertainment')">Entertainment</div>
-                                <div class="dropdown-item" onclick="performSearch('general')">General</div>
-                                <div class="dropdown-item" onclick="performSearch('health')">Health</div>
-                                <div class="dropdown-item" onclick="performSearch('science')">Science</div>
-                                <div class="dropdown-item" onclick="performSearch('sports')">Sports</div>
-                                <div class="dropdown-item" onclick="performSearch('technology')">Technology</div>
+                                <div class="dropdown-item" onclick="selectCategory('business')">Business</div>
+                                <div class="dropdown-item" onclick="selectCategory('entertainment')">Entertainment</div>
+                                <div class="dropdown-item" onclick="selectCategory('general')">General</div>
+                                <div class="dropdown-item" onclick="selectCategory('health')">Health</div>
+                                <div class="dropdown-item" onclick="selectCategory('science')">Science</div>
+                                <div class="dropdown-item" onclick="selectCategory('sports')">Sports</div>
+                                <div class="dropdown-item" onclick="selectCategory('technology')">Technology</div>
                             </div>
                         </div>
                         <div class="dropdown-divider"></div>
@@ -48,6 +48,7 @@
                 <div class="col-10 container-right">
                     <div id="news-container">
                     </div>
+                    <button class="btn btn-primary" onclick="loadMore()">Load more</button>
                 </div>
             </div>
         </div>

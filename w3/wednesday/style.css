@@ -18,7 +18,7 @@ section {
 
 .main-container {
     width: 95%;
-    background-color: red;
+    background-color: white;
 }
 
 .container-left {
@@ -28,6 +28,8 @@ section {
 
 .container-right {
     background-color: white;
+    justify-content: center;
+    text-align: center;
 }
 
 .news-container {

@@ -3,15 +3,29 @@ let newsList = []
 let sourcesList = []
 let selectedSourcesList = []
 let currenCategory = 'general'
+let currentPage = 1;
 
-const loadNews = async (category, query) => {
-    let url = `https://newsapi.org/v2/top-headlines?country=us&apiKey=${apiKey}&category=${category}&q=${query}`;
+const loadNews = async (category, query, page) => {
+    let url = `https://newsapi.org/v2/top-headlines?country=us&apiKey=${apiKey}&category=${category}&q=${query}&page=${page}`;
     let data = await fetch(url);
     let result = await data.json();
 
-    newsList = result.articles;
+    let articles = result.articles;
 
-    renderList(newsList)
+    if (page == 1) {
+        newsList = articles;
+    } else {
+        console.log(`Load more ${currentPage} ${articles.length}`);
+        
+        if (articles.length > 0) {
+            newsList = newsList.concat(articles)
+        }
+
+        console.log(`Load more ${currentPage} ${newsList.length}`);
+    }
+    currentPage = currentPage + 1;
+
+    filteredBySource()
     console.log(newsList);
 }
 
@@ -28,6 +42,7 @@ const loadSources = async () => {
 
 const renderList = (list) => {
     let html = list.map(news => {
+    
         let newsItemHtml =
             `
             <div class="container news-container">
@@ -47,6 +62,7 @@ const renderList = (list) => {
         return newsItemHtml;
     }).join('');
     document.getElementById("news-container").innerHTML = html;
+    document.getElementById("count-container").innerHTML = `${list.length} of ${newsList.length}`
 }
 
 const renderSourceList = (list) => {
@@ -66,7 +82,7 @@ const renderSourceList = (list) => {
 const performSearch = (category) => {
     let textSearch = document.getElementById('search-input').value
     currenCategory = category
-    loadNews(currenCategory, textSearch)
+    loadNews(currenCategory, textSearch, currentPage)
 }
 
 const onChangeSource = (cb) => {
@@ -82,6 +98,10 @@ const onChangeSource = (cb) => {
         selectedSourcesList = selectedSourcesList.filter(x => x.id != cb.id);
     }
 
+    filteredBySource();
+}
+
+const filteredBySource = () => {
     if (selectedSourcesList.length > 0) {
         let filteredNewsList = newsList.filter(news => {
             console.log(`filter news ${news.source.name}`);
@@ -91,6 +111,16 @@ const onChangeSource = (cb) => {
     } else{
         renderList(newsList);
     }
+}
+
+const loadMore = () => {
+    console.log("loadMore");
+    performSearch(currenCategory);
+}
+
+const selectCategory = (category) => {
+    currentPage = 1;
+    performSearch(category);
 }
 
 performSearch(currenCategory);
