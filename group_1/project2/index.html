@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="container col-12">
+        <div class="row">
+            <div class="col-md-1 hidden-xs container-left-most"></div>
+
+            <div class="col-md-2 col-sm-1 container-side-menu">
+                <i class="fab fa-twitter fa-twitter-icon"></i>
+                <div class="menu-item">
+                    <i class="fas fa-home menu-icon"></i>
+                    <div class="hidden-xs">Home</div>
+                </div>
+                <div class="menu-item">
+                    <i class="fas fa-hashtag menu-icon"></i>
+                    <div class="hidden-xs">Explore</div>
+                </div>
+                <div class="menu-item">
+                    <i class="far fa-bell menu-icon"></i>
+                    <div class="hidden-xs">Notifications</div>
+                </div>
+                <div class="menu-item">
+                    <i class="far fa-envelope menu-icon"></i>
+                    <div class="hidden-xs">Messages</div>
+                </div>
+                <div class="menu-item">
+                    <i class="far fa-bookmark menu-icon"></i>
+                    <div class="hidden-xs">Bookmarks</div>
+                </div>
+                <div class="menu-item">
+                    <i class="far fa-list-alt menu-icon"></i>
+                    <div class="hidden-xs">List</div>
+                </div>
+                <div class="menu-item">
+                    <i class="far fa-user menu-icon"></i>
+                    <div class="hidden-xs">Profile</div>
+                </div>
+                <div class="menu-item">
+                    <i class="far fa-comment-dots menu-icon"></i>
+                    <div class="hidden-xs">More</div>
+                </div>
+                <div>
+                    <button class="btn btn-primary btn-tweet">Tweet</button>
+                </div>
+
+            </div>
+            <div class="col-md-6 col-sm-12 container-tweets">
+                <div class="home-tab-container">
+                    <div>Home</div>
+                    <i class="fas fa-star-and-crescent"></i>
+                </div>
+                <div class="container input-container">
+                    <div class="row">
+                        <div class="col-2">
+                            <i class="fas fa-user-circle user-avatar"></i>
+                        </div>
+                        <div class="col-10">
+                            <textarea id="tweet-input" class="tweet-input" type="text" placeholder="What's happening?"
+                                maxlength="140"></textarea>
+                            <div class="count" id="count">140 character letf.</div>
+                            <div class="row action-container">
+                                <div class="row">
+                                    <div onclick="openImageInput()"><i class="far fa-image tweet-menu-icon"></i></div>
+
+                                    <div><i class="fas fa-film tweet-menu-icon"></i></div>
+
+                                    <div><i class="fas fa-poll-h tweet-menu-icon"></i></div>
+
+                                    <div><i class="far fa-smile tweet-menu-icon"></i></div>
+
+                                    <div><i class="fas fa-ellipsis-h tweet-menu-icon"></i></div>
+                                </div>
+                                <button id="button-tweet" class="button-tweet" disabled>Tweet</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="divider"></div>
+
+                <div id="tweet-list-container" class="container tweet-list-container">
+                    
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-0 container-side-tags">
+                <input id="tag-search" type="text" placeholder="Search tags" class="tag-search"></input>
+                <div id="news-container">
+                    <i class="fab fa-twitter fa-twitter-icon fa-twitter-icon-right"></i>
+                    <div class="weather-header">Weather at your place</div>
+                    <div id="country" class="weather-item">Việt Nam</div>
+                    <div id="city" class="weather-item">Ho Chi Minh</div>
+                    <div id="weather" class="weather-item">Clouds: broken clouds</div>
+                    <div id="temp" class="weather-item">Temperature: 301</div>
+                    <div id="feel-like" class="weather-item">Feel-like: 301</div>
+                    <div id="pressure" class="weather-item">Pressure: 1011</div>
+                    <div id="humidity" class="weather-item">Humidity: 88</div>
+                    <div id="wind_speed" class="weather-item">Wind speed: 2.1</div>
+
+                </div>
+            </div>
+            <div class="col-md-1 hidden-xs container-right-most"></div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+.container-left-most {
+    background-color: khaki;
+    height: 1000px;
+}
+
+.container-side-menu {
+    background-color: lawngreen;
+    height: 1000px;
+}
+
+.container-tweets {
+    background-color: lightcoral;
+    height: 1000px;
+}
+
+.container-side-tags {
+    background-color: lightseagreen;
+    height: 1000px;
+}
+
+.container-right-most {
+    background-color: magenta;
+    height: 1000px;
+}
+
+
+textarea {
+    width: 400px;
+    
+}
+
+.btn-custom{
+    color: #f8b5d0;
+
+}
+
+button{
+    background-color: transparent;
+    border: transparent;
+}
