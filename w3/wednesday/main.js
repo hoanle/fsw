@@ -123,5 +123,10 @@ const selectCategory = (category) => {
     performSearch(category);
 }
 
+const submitSearch = () => {
+    currentPage = 1
+    performSearch(currenCategory);
+}
+
 performSearch(currenCategory);
 loadSources();

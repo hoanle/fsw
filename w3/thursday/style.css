@@ -1,0 +1,37 @@
+.container-left-most {
+    background-color: khaki;
+    height: 1000px;
+}
+
+.container-side-menu {
+    background-color: lawngreen;
+    height: 1000px;
+}
+
+.container-tweets {
+    background-color: lightcoral;
+    height: 1000px;
+}
+
+.container-side-tags {
+    background-color: lightseagreen;
+    height: 1000px;
+}
+
+.container-right-most {
+    background-color: magenta;
+    height: 1000px;
+}
+
+.home-bar-container {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-top: gray solid 1px;
+    border-left: gray solid 1px;
+    border-right: gray solid 1px;
+    border-bottom: gray solid 1px;
+}
