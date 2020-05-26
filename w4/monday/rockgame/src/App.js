@@ -8,7 +8,7 @@ import Button from '@material-ui/core/Button';
 import AlertDialog from './components/AlertDialog/AlertDialog';
 
 function App() {
-
+  const [width, setWidth] = useState(window.innerWidth);
   const [myChoice, setMyChoice] = useState(null);
   const [computerChoice, setComputerChoice] = useState(null);
   const [userWin, setUserWin] = useState(null);
@@ -23,6 +23,11 @@ function App() {
     divRef.current.scrollIntoView({ block: 'end', behavior: 'smooth' });
   }
 
+  const windowWidthCaculate = () => {
+    window.addEventListener('resize', () => {
+     setWidth(window.innerWidth);
+   })
+  }
   const startGame = () => {
     setHistory([])
     setStarted(!started)
@@ -31,15 +36,15 @@ function App() {
   }
   useEffect(() => {
     scrollToBottom();
-
+    windowWidthCaculate();
     if (history.length === 3) {
       if (history[0].winner === "You" && history[1].winner === "You" && history[2].winner === "You") {
         setYouFlawless(true)
       } else if (history[0].winner === "Computer" && history[1].winner === "Computer" && history[2].winner === "Computer") {
         setComputerFlawless(true)
-      } 
+      }
     }
-  }, [history])
+  }, [history, window])
 
   const onClick = (choice) => {
     let computer = Math.floor(Math.random() * 3);
@@ -77,8 +82,37 @@ function App() {
   };
 
   return (
-    <div className="App">
+    <div className={width > 600 ? "App" : "App-vertical"}>
       <div className="App-container">
+        <SwitchTransition>
+          <CSSTransition
+            key={myChoice}
+            addEndListener={(node, done) => node.addEventListener("transitionend", done, false)}
+            classNames='fade'>
+            <ChoiceCard choice={myChoice} winner={userWin} name="YOU" />
+          </CSSTransition>
+        </SwitchTransition>
+        <div className="divider"></div>
+        <SwitchTransition>
+          <CSSTransition
+            key={computerChoice}
+            addEndListener={(node, done) => node.addEventListener("transitionend", done, false)}
+            classNames='fade'>
+            <ChoiceCard choice={computerChoice} winner={userWin == null ? null : !userWin} name="COMPUTER" />
+          </CSSTransition>
+        </SwitchTransition>
+
+      </div>
+      
+      <div className="App-side-menu">
+        <div className="App-options-container">
+          <GameButton choice={0} onClick={onClick} disabled={!started} />
+          <GameButton choice={1} onClick={onClick} disabled={!started} />
+          <GameButton choice={2} onClick={onClick} disabled={!started} />
+          <Button variant="outlined" color="primary" onClick={() => startGame()}>
+            {started ? "Reset" : "Start"}
+          </Button>
+        </div>
         <div className="App-history-container">
           <div className="App-history-header">History </div>
           <div className="App-history-list">
@@ -97,34 +131,6 @@ function App() {
           </div>
           <div ref={divRef} />
         </div>
-        
-        <SwitchTransition>
-          <CSSTransition
-            key={myChoice}
-            addEndListener={(node, done) => node.addEventListener("transitionend", done, false)}
-            classNames='fade'>
-            <ChoiceCard choice={myChoice} winner={userWin} name="YOU" />
-          </CSSTransition>
-        </SwitchTransition>
-
-        <div className="App-options-container">
-          <GameButton choice={0} onClick={onClick} disabled={!started} />
-          <GameButton choice={1} onClick={onClick} disabled={!started} />
-          <GameButton choice={2} onClick={onClick} disabled={!started} />
-          <Button variant="outlined" color="primary" onClick={() => startGame()}>
-            {started ? "Reset" : "Start"}
-          </Button>
-        </div>
-        
-        <SwitchTransition>
-          <CSSTransition
-            key={computerChoice}
-            addEndListener={(node, done) => node.addEventListener("transitionend", done, false)}
-            classNames='fade'>
-            <ChoiceCard choice={computerChoice} winner={userWin == null ? null : !userWin} name="COMPUTER" />
-          </CSSTransition>
-        </SwitchTransition>
-        
       </div>
       <AlertDialog open={computerFlawless} title="Flawless victory" content="Computer won easily"></AlertDialog>
       <AlertDialog open={youFlawless} title="Flawless victory" content="You won easily"></AlertDialog>

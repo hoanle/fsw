@@ -1,18 +1,20 @@
 .ChoiceCard-div { 
     background-color: white;
     border-radius: 10px;
-    width: 250px;
-    height: 400px;
+    width: 100%;
+    max-width: 800px;
+    height: 250px;
     border-width: 5px;
     border-style: solid;
     justify-content: space-evenly;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
 }
 
 .ChoiceCard-img {
-    width: 70%;
+    height: 70%;
+    max-width: 250px;
 }
 
 .ChoiceCard-h1 {

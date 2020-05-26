@@ -4,7 +4,7 @@ import { choices } from './../../constants/Constant';
 
 const ChoiceCard = (props) => {
     let color = props.winner ? "red" : "blue"
-    let divClassName = `ChoiceCard-div ${color}`;
+    let divClassName = `ChoiceCard-div ${color}`
     let image = <img src={choices[props.choice]} className="ChoiceCard-img" />;
     let text = props.winner == null ? " " : (props.winner ? "WON" : "LOST");
     return (
