@@ -58,6 +58,26 @@
   }
 }
 
+.App-history-container {
+  background-color: darkturquoise;
+  color: white;
+  width: 150px;
+  max-height: 350px;
+  border-radius: 20px;
+  padding-bottom: 10px;
+  max-height: 350px;
+  overflow-y: scroll;
+}
+
+.App-history-header {
+  color: white;
+  background-color: blue;
+  font-size: 30px;
+  position: sticky;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  top: 0;
+}
 
 .fade-enter{
   opacity: 0;
@@ -74,4 +94,19 @@
 .fade-enter-active,
 .fade-exit-active{
   transition: opacity 500ms;
+}
+
+.item-enter {
+  opacity: 0;
+}
+.item-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+.item-exit {
+  opacity: 1;
+}
+.item-exit-active {
+  opacity: 0;
+  transition: opacity 500ms ease-in;
 }
