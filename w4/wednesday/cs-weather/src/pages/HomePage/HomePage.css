@@ -4,11 +4,11 @@
 }
 
 .HomePage-weather-display-container {
-    position: relative;
     background-color: darkseagreen;
     justify-content: center;
     align-items: center;
     display: flex;
+    z-index: 0;
     text-align: center;
 }
 
@@ -20,19 +20,15 @@
 }
 
 .HomePage-weather-card {
-    position: absolute;
     top: 50%;
     left: 50%;
+    z-index: 1;
     transform: translate(-50%, -50%);
 }
 
 .HomePage-weather-image {
+    position: absolute;
     width: 100%;
-    object-fit: contain;
-}
-
-.acontainer {
-    position: relative;
-    text-align: center;
-    color: white;
+    height: 100%;
+    z-index: -1;
 }

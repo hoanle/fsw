@@ -5,6 +5,7 @@
     border-width: 5px;
     border-style: solid;
     display: flex;
+    z-index: 2;
     align-items: center;
     width: 600px;
     padding: 20px;
