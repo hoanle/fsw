@@ -1,0 +1,35 @@
+.HomePage-city-container {
+    background-color: white;
+    height: 100vh;
+}
+
+.HomePage-weather-display-container {
+    background-color: darkseagreen;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    z-index: 0;
+    text-align: center;
+}
+
+.no-padding {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+}
+
+.HomePage-weather-card {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    z-index: 1;
+    transform: translate(50%, 50%);
+}
+
+.HomePage-weather-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}

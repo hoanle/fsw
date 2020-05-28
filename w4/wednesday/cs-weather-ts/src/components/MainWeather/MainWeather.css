@@ -1,0 +1,42 @@
+.MainWeather-div {
+    background-color: #00003355;
+    border-radius: 20px;
+    border-color: white;
+    border-width: 5px;
+    border-style: solid;
+    display: flex;
+    align-items: center;
+    width: 600px;
+    padding: 20px;
+    flex-direction: column;
+}
+
+.MainWeather-city {
+    font-size: 40px;
+    color: white;
+}
+
+.MainWeather-divider {
+    height: 2px;
+    background-color: lightsalmon;
+    margin-right: 30px;
+    width: 500px;
+}
+
+.MainWeather-temp {
+    font-size: 60px;
+    color: yellow;
+    font-weight: bold;
+}
+
+.MainWeather-main {
+    font-size: 60px;
+    color: white;
+    font-weight: bold;
+}
+
+.MainWeather-loading {
+    font-size: 60px;
+    color: white;
+    font-weight: bold;
+}
