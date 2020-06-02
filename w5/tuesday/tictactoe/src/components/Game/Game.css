@@ -1,0 +1,35 @@
+.Game-history {
+    color: white;
+    margin-top: 20px;
+    background-color: tomato;
+}
+.Game-board  {
+    margin-top: 20px;
+    justify-content: flex-end;
+    align-items: flex-end !important;
+    display: flex;
+    flex-direction: row-reverse !important;
+}
+.Game-row {
+    padding: 10px;
+    justify-content: start;
+}
+
+.Game-history h3 {
+    color: white;
+}
+
+.Game-history h6 {
+    color: green;
+}
+
+.Game-button {
+    padding: 10px
+}
+
+.Game-history-container {
+    display: flex;
+    flex-direction: column;
+    max-height: 400px;
+    overflow: scroll;
+}

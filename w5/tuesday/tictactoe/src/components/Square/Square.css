@@ -1,0 +1,14 @@
+.Square-div {
+    margin: 0px;
+    padding:0px
+}
+
+.Square-button {
+    font-family: fantasy;
+    font-weight: bolder;
+    font-size: 30px !important;
+    width: 50px;
+    height: 50px;
+    border: slategrey solid 1px !important;
+    border-radius: 0px !important;
+}

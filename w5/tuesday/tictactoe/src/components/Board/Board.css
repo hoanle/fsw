@@ -1,0 +1,22 @@
+.Board-row {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    padding-top: 0px;
+    padding-top: 0px;
+}
+
+.Board-container {
+    background-color: transparent;
+    min-width: 550px;
+    width: auto !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Board-div {
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+    display: flex;
+    flex-direction: column;
+}
