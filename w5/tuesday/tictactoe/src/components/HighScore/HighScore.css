@@ -1,0 +1,9 @@
+.HighScore-div {
+    background-color: grey;
+    margin-top: 10px;
+    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    overflow: scroll;
+}

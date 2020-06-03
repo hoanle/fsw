@@ -6,7 +6,7 @@
 .Game-board  {
     margin-top: 20px;
     justify-content: flex-end;
-    align-items: flex-end !important;
+    align-items: flex-start !important;
     display: flex;
     flex-direction: row-reverse !important;
 }
@@ -32,4 +32,10 @@
     flex-direction: column;
     max-height: 400px;
     overflow: scroll;
+}
+
+.Game-highscore {
+    color: white;
+    margin-top: 20px;
+    background-color: green;
 }
