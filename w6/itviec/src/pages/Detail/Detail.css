@@ -1,0 +1,54 @@
+.Detail-container {
+    background-color: white;
+    padding: 20px;
+}
+
+
+.Detail-tag {
+    font-size: 12px !important;
+    margin-right: 10px;
+}
+
+.JobItem-tag:hover {
+    font-size: 10px !important;
+    margin-right: 10px;
+    color: tomato !important;
+    background-color: transparent !important;
+    border-color: tomato !important;
+}
+
+.Detail-col-right {
+    align-items: start;
+    justify-content: start;
+    display: flex;
+    flex-direction: column;
+}
+
+.Detail-font-awesome {
+    font-size: 13px;
+    padding-top: 5px;
+}
+
+.Detail-header{
+    margin-top: 20px;
+    font-size: 30px;
+}
+
+.Detail-description {
+    text-align: left;
+    font-size: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.Detail-apply-button {
+    width: 100% !important;
+    margin-top: 20px;
+}
+
+
+.Detail-li {
+    text-align: left;
+    font-size: 13px;
+    font-weight: bold;
+}

@@ -1,0 +1,110 @@
+.JobItem-card {
+    display: flex;
+    padding: 10px;
+    flex-direction: row;
+    margin: 10px;
+    justify-content: space-between;
+    background-color: seashell !important;
+}
+
+.JobItem-card-hot {
+    display: flex;
+    padding: 10px;
+    flex-direction: row;
+    margin: 10px;
+    justify-content: space-between;
+    background-color: #FFEDDA !important;
+    border-top: #FC8B28 solid 2px;
+    border-bottom: #FC8B28 solid 2px;
+}
+
+.JobItem-card-hot:hover {
+    display: flex;
+    padding: 10px;
+    flex-direction: row;
+    margin: 10px;
+    justify-content: space-between;
+    background-color: #FFEDDA !important;
+    border-top: #FC8B28 solid 2px;
+    border-bottom: #FC8B28 solid 2px;
+    box-shadow: 2px 2px 2px #888888;
+}
+
+.JobItem-card:hover {
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    flex-direction: row;
+    background-color: white !important;
+    border-color: white;
+    border-width: 1px;
+    border-style: solid;
+    box-shadow: 2px 5px 5px #888888;
+}
+
+.JobItem-image {
+    width: 75px !important;
+    height: 75px !important;
+    object-fit: contain;
+}
+
+.JobItem-col {
+    align-items: start;
+    justify-content: start;
+    display: flex;
+    flex-direction: column;
+}
+
+.JobItem-description {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    line-height: 20px;
+    max-height: 40px;
+    -webkit-line-clamp: 3;
+    font-size: 14px;
+    color: slategrey;
+    text-align: start;
+    -webkit-box-orient: vertical;
+}
+
+.JobItem-li {
+    text-align: left;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.JobItem-tag {
+    font-size: 10px !important;
+    margin-right: 10px;
+}
+
+.JobItem-tag:hover {
+    font-size: 10px !important;
+    margin-right: 10px;
+    color: tomato !important;
+    background-color: transparent !important;
+    border-color: tomato !important;
+}
+
+.JobItem-col-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 12px;
+    height: 100%;
+}
+
+.JobItem-hotjob {
+    background-color: orange;
+    color: white;
+    padding: 5px;
+    font-size: 12px;
+}
+
+.JobItem-signin-salary {
+    font-size: 13px;
+    color: lightskyblue;
+}

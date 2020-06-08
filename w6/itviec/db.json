@@ -1,0 +1,129 @@
+{
+    "jobs": [
+      {
+        "id": 0,
+        "img": "/images/Logo1.png",
+        "title": "Designer -Balancing/Mid-core 3D RPG",
+        "salary": "2500",
+        "city": "Ho Chi Minh",
+        "district": "3",
+        "time": 1586762303771,
+        "tags": [
+          "Game",
+          "Developer",
+          "C#"
+        ],
+        "isHotjob":true,
+        "benefits": [
+          "Walfare",
+          "Multiple game genres",
+          "Promotion opportunities"
+        ],
+        "description": "Experience in VB.NET, C#, ASP.NET, ADO.NET, HTML, CSS, Javascript and Web Service. 2 years experience Knowledge of Design Patterns, and UML. Experience in object oriented programming. Good at MS SQL Server (relational database). stored procedures. Knowledge of IT Network Knowledge of Accounting and Finance process is a plus."
+      },
+      {
+        "id": 1,
+        "img": "/images/Logo2.png",
+        "title": "Software Engineer (Linux, Agile)",
+        "salary": 2000,
+        "city": "Ho Chi Minh",
+        "district": 1,
+        "time": 1586762303771,
+        "tags": [
+          "Agile",
+          "Linux"
+        ],
+        "isHotjob":false,
+        "benefits": [
+          "Attractive and competitive salary",
+          "Training/work overseas",
+          "Open and honest culture"
+        ],
+        "description": "Exciting, new opportunities exist in our distributed cross-functional teams responsible for a large-scale system from a world-leading company. You will be working with functional modules required to manage signaling from end-user equipment, allocating application servers, establishing emergency connections, protecting core network, securing and controlling communication with other networks"
+      },
+      {
+        "id": 2,
+        "img": "/images/Logo3.png",
+        "title": "NodeJS Developer (JavaScript, HTML5)",
+        "salary": 2500,
+        "city": "Ha Noi",
+        "district": 4,
+        "time": 1587710536152,
+        "tags": [
+          "HTML5",
+          "Javascript",
+          "NodeJS"
+        ],
+        "isHotjob":true,
+        "benefits": [
+          "Salary up to $2500",
+          "Awesome working environment",
+          "Amazing products and people"
+        ],
+        "description": "Maintains and upgrades many interesting current company's products Develops new company's products on demand Cooperates with back-end development and QA"
+      },
+      {
+        "id": 3,
+        "img": "/images/Logo4.png",
+        "title": "Technical Leader (PHP, JavaScript)",
+        "salary": 3000,
+        "city": "Ha Noi",
+        "district": 1,
+        "time": 1587710536152,
+        "tags": [
+          "PHP",
+          "Javascript",
+          "Team Leader"
+        ],
+        "isHotjob":true,
+        "benefits": [
+          "Working with Japanese experts",
+          "15 annual leave days",
+          "Trained in technical skills"
+        ],
+        "description": "We are looking for new members who are passionate about technology, creative in solving problems, and desire to develop the best products for the end"
+      },
+      {
+        "id": 4,
+        "img": "/images/Logo5.png",
+        "title": "All levels Frontend (JavaScript/ReactJS)",
+        "salary": 3000,
+        "city": "Ho Chi Minh",
+        "district": 2,
+        "time": 1587710536152,
+        "tags": [
+          "ReactJS",
+          "Javascript",
+          "HTML5"
+        ],
+        "isHotjob":false,
+        "benefits": [
+          "Training Program",
+          "Premium healthcare",
+          "On-site short/long-term in US"
+        ],
+        "description": "This position will be part of our core team. We are looking for a software developer that  take the role as lead software engineer. This role will be one of our building blocks when scaling out our team. This person will be doing development, research and on-boarding of new members. You will be in charge of your field and will actively participate in technology discussions in various projects. Your will be working in our new offices in Ho Chi Minh."
+      },
+      {
+        "id": 5,
+        "img": "/images/Logo6.png",
+        "title": "Front - end Developer (ReactJS)",
+        "salary": 5000,
+        "city": "Ho Chi Minh",
+        "district": 1,
+        "time": 1587710536152,
+        "tags": [
+          "ReactJS",
+          "Javascript",
+          "HTML5"
+        ],
+        "isHotjob":true,
+        "benefits": [
+          "Ownership and growth",
+          "Attractive Stock Options",
+          "On-site short/long-term in US"
+        ],
+        "description": "Develop templates and prototype base on UI/UX designs. Implement user interface for web applications using ReactJS and/or Angular"
+      }
+    ]
+  }
