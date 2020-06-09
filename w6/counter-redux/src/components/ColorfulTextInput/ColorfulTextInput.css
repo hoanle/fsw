@@ -1,0 +1,54 @@
+.red {
+    padding: 10px;
+    border-color: red !important;
+    border-width: 2px;
+    border-style: solid;
+    color: red!important;
+    margin: 10px;
+}
+
+.yellow {
+    padding: 10px;
+    border-color: yellow !important;
+    border-width: 2px;
+    border-style: solid;
+    color: yellow !important;
+    margin: 10px;
+}
+
+.green {
+    padding: 10px;
+    border-color: green !important;
+    border-width: 2px;
+    border-style: solid;
+    color: green !important;
+    margin: 10px;
+}
+
+
+.black {
+    padding: 10px;
+    border-color: black !important;
+    border-width: 2px;
+    border-style: solid;
+    color: black !important;
+    margin: 10px;
+}
+
+.blue {
+    padding: 10px;
+    border-color: blue !important;
+    border-width: 2px;
+    border-style: solid;
+    color: blue !important;
+    margin: 10px;
+}
+
+.box {
+    padding: 10px;
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+    color: black;
+    margin: 10px;
+}
