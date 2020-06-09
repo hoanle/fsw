@@ -6,6 +6,7 @@ import Login from './pages/Login';
 import Detail from './pages/Detail';
 import CustomNavbar from './components/CustomNavbar/CustomNavbar';
 import { Container } from 'react-bootstrap';
+import NotFound from './pages';
 
 function App() {
   const [user, setUser] = useState(false);
@@ -45,6 +46,8 @@ function App() {
         <ProtectedRoute 
         path="/job/:id" 
         render={(props: any) => <Detail {...props} />} />
+
+        <Route path="*" component={NotFound} />
       </Switch>
 
     </div>
