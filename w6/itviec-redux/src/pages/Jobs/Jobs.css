@@ -1,0 +1,57 @@
+.Jobs-container {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+.Jobs-col {
+    background-color: black !important;
+    align-items: flex-start;
+    color: black;
+}
+
+.margin-left-right {
+    margin: 10px;
+}
+
+.Jobs-box {
+    font-size: 18px !important;
+    padding: 10px !important;
+    border-radius: 0px !important;
+    border-color: transparent;
+    outline: transparent;
+
+}
+.Jobs-header {
+    font-size: 25px;
+    color: white;
+    text-align: start;
+}
+
+.Jobs-tag {
+    background-color: transparent !important;
+    outline: black !important;
+    margin: 5px;
+}
+
+.no-padding {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+.Jobs-main-search {
+    display: flex;
+    flex-direction: column;
+    background-color: lightgray;
+    justify-content: center;
+    align-items: center;
+}
+
+.Jobs-main-col {
+    margin-top: -100px;
+}
+
+.Jobs-item {
+    background-color: tomato;
+    margin: 10px;
+}

@@ -1,0 +1,21 @@
+.CustomNavbar-logo {
+    height: 50px;
+}
+
+.CustomNavbar-navbar {
+    background-color: black !important;
+}
+
+.CustomNavbar-navbar-collapse {
+    color: white !important;
+    background-color: black !important;
+}
+
+.color-white {
+    color: white !important;
+}
+
+.color-black {
+    color: white !important;
+    background-color: black !important;
+}
