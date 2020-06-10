@@ -25,10 +25,16 @@ const jobReducer = (state: JobsState = initialState, action: any) => {
         case 'LOAD_JOBS_FAILURE':
             return {
                 ...state,
-                loggingIn: false,
+                loading: false,
                 jobs: [],
                 error: action.errorMessage
             };
+        case 'LOAD_JOB_DETAIL_SUCCESS':
+            return {
+                ...state,
+                loading: false,
+                job: action.job
+            }
         case 'FILTER_JOB':
             let filtered = state.originalJobs.filter((x: Job) => {
                 return (
