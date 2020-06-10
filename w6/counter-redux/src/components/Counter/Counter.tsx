@@ -18,20 +18,32 @@ const Counter = () => {
         })
     }
 
-    const onNumberChange = (e:any) => {
-        if (inputRef.current != null && inputRef.current.value != null)  {
-            setStep(parseInt(inputRef.current.value));
+    const onIncrement =  () => {
+        let stepNo = 1;
+        if (inputRef.current != null && inputRef.current.value != null) {
+            stepNo = parseInt(inputRef.current.value);
         }
+        
+        dispatch({type: "INCREMENT", step: stepNo})
     }
-    
+
+    const onDecrement=  () => {
+        let stepNo = 1;
+        if (inputRef.current != null && inputRef.current.value != null) {
+            stepNo = parseInt(inputRef.current.value);
+        }
+        
+        dispatch({type: "DECREMENT", step: stepNo})
+    }
+
     return (
         <div className="App">
             <h1>{count}</h1>
-            <button onClick={() => dispatch({type: "INCREMENT", step: step})}>Increment</button>
-            <button onClick={() => dispatch({type: "DECREMENT", step: step})}>Decrement</button>
+            <button onClick={onIncrement}>Increment</button>
+            <button onClick={onDecrement}>Decrement</button>
             <button onClick={() => dispatch({type: "RESET"})}>Reset</button>
             <input onChange={onColorChange} placeholder="color change"></input>
-            <input ref={inputRef} onChange={onNumberChange} placeholder="number enter" type="number"></input>
+            <input ref={inputRef} placeholder="number enter" type="number"></input>
             <div className="Counter-div">
                 {
                     [...Array(count)].map(x => {
